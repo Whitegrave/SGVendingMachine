@@ -1,0 +1,198 @@
+/* Explicitly make body element be full screen height*/
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Paragraphs (snack card text) */
+p {
+    text-align: center;
+}
+
+/* Horizontal rules */
+hr {
+    height: 0.05rem;
+    background-color: black;
+}
+
+/* Cards */
+.card {
+    width: 100%;
+    height: 100%;
+    border-width: thick;
+    border-color: black;
+    visibility: hidden;
+}
+
+/* All buttons */
+.button {
+    background-color: rgb(255, 255, 255);  
+}
+
+/* Form display parent div */
+.form-group {
+    display: block;
+    text-align: center;
+}
+
+/* General buttons css */
+.btn-group {
+    width: 100%;
+    height: 100%
+}
+
+/* Debug Borders 
+.container-fluid {
+    border-style: solid;
+    border-width: thick;
+    border-color: orange;
+}
+.row {
+    border-style: solid;
+    border-width: thick;  
+    border-color: red;
+}
+.col, .col-9, .col-3 {
+    border-style: solid;
+    border-width: thick;
+    border-color: purple;   
+} 
+*/
+
+/* Primary container */
+#container-main {   
+    background-color: rgb(230, 222, 220);  
+    height: 100%;
+}
+
+/* Title Row */
+#row-title {
+    min-height: 10%;
+}
+
+/* Body row */
+#row-body {
+    min-height: 85%;
+}
+
+/* Footer row */
+#row-footer {
+    min-height: 5%;
+}
+
+/* Title Column */
+#col-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Snack rows */
+#row-snacks-top, #row-snacks-mid, #row-snacks-bot {
+    min-height: 33.333%;
+    padding: 0.5rem;
+}
+
+/* Snack columns */
+#col-snack-1, #col-snack-2, #col-snack-3, #col-snack-4, #col-snack-5, #col-snack-6, #col-snack-7, #col-snack-8, #col-snack-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Interface column 
+#col-interface {
+    background-color: rgb(219, 203, 199);  
+} */
+
+/* Inputs parent rows */
+#row-money-parent, #row-messages-parent, #row-change-parent {
+    min-height: 30%;
+}
+
+/* Money input rows */
+#row-money-title, #row-money-input, #row-money-buttons1, #row-money-buttons2 {
+    min-height: 25%;    
+}
+
+/* Messages display rows */
+#row-messages-title, #row-messages-display, #row-messages-itemid, #row-messages-buybutton {
+    min-height: 25%;
+}
+
+/* Change display rows */
+#row-change-title, #row-change-display {
+    min-height: 33.333%;
+}
+
+/* Row for change return button */
+#row-change-return {
+    min-height: 25%;
+    max-height: 33%
+}
+
+/* Form display money */
+#displaymoney {
+    width: 50%;
+    min-width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;   
+}
+
+/* Buttons to increment money */
+#btn-add-dollar, #btn-add-dime, #btn-add-quarter, #btn-add-nickel {
+    text-align: center;
+    width: 50%;
+    border-radius: thick;
+    margin: 0.5rem;
+}
+
+/* Message display zone */
+#displaymessages {
+    width: 80%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Selected item zone */
+#displayitemid {
+    width: 60%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Make purchase button */
+#btn-buy {
+    text-align: center;
+    width: 80%;
+    height: 66%;
+    border-radius: thick;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Change amount display zone */
+#displaychange {
+    width: 90%;
+    min-width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Refund money button */
+#btn-change-return {
+    text-align: center;
+    width: 50%;
+    height: 66%;
+    border-radius: thick;
+    margin-left: auto;
+    margin-right: auto;
+}
