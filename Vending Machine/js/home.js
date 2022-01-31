@@ -169,8 +169,8 @@ $("#btn-change-return").click(function() {
 /* Populate coins display */
 function displayCoins(quarters, dimes, nickels, pennies) {
     var displayme;
+    
     if (quarters > 0) {
-        moneyRemaining = quarters * 0.25;
         if (dimes > 0 || nickels > 0 || pennies > 0)
         {
             displayme = `Quarters: ${quarters}, `;
@@ -179,7 +179,6 @@ function displayCoins(quarters, dimes, nickels, pennies) {
         }
     }
     if (dimes > 0) {
-        moneyRemaining += dimes * 0.1;
         if (nickels > 0 || pennies > 0)
         {
             displayme += `Dimes: ${dimes}, `;
@@ -187,8 +186,7 @@ function displayCoins(quarters, dimes, nickels, pennies) {
             displayme += `Dimes: ${dimes}`;
         }
     }
-    if (nickels > 0) {
-        moneyRemaining += dimes * 0.05;
+    if (nickels > 0) {    
         if (pennies > 0)
         {
             displayme += `Nickels: ${nickels}, `;
@@ -197,7 +195,6 @@ function displayCoins(quarters, dimes, nickels, pennies) {
         }
     }
     if (pennies > 0) {
-        moneyRemaining += pennies * 0.01;
         displayme += `Pennies: ${pennies}`;
     }
 
