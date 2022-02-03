@@ -168,7 +168,7 @@ $("#btn-change-return").click(function() {
 
 /* Populate coins display */
 function displayCoins(quarters, dimes, nickels, pennies) {
-    var displayme;
+    var displayme ="";
     
     if (quarters > 0) {
         if (dimes > 0 || nickels > 0 || pennies > 0)
